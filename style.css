@@ -1,0 +1,200 @@
+/* hero background image */
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.bgimage {
+    height:100vh;
+    background: url('./assets/techgirly.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: rgb(224, 103, 154);
+}
+.servicesText:hover {
+    border: 1px solid rgb(224, 103, 154);
+}
+
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: rgb(224, 103, 154);
+}
+
+
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: rgb(224, 103, 154);
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: peachpuff;
+    text-align: center;
+}
+
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+
+/*skills*/
+
+.inner{
+    padding-top: 20px;
+}
+
+.head{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+}
+
+.head:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height:4px ;
+    width: 100px;
+    background-color: pink;
+
+}
+
+
+.contain{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-content: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding:1rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+.skill-title:after{
+    content:'' ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px  0 0 2px;
+    background-color: black;
+
+}
+
+.skill-title:before{
+    content:'' ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: black;
+
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem ;
+
+}
+
+.img{
+    width: 90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #F4EDCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 40%;
+    height:90px;
+    border-radius: 45px;
+
+}
+
+.skill-title h3{
+ color: black;
+ margin: 0.5rem;
+
+
+}
+.skills-icon{
+    width:50px;
+    z-index:2;
+}
